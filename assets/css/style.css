@@ -1,0 +1,969 @@
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Cormorant+SC:wght@300&family=Dancing+Script&family=Indie+Flower&family=Pacifico&family=Qwigley&display=swap');
+*{
+    border:none;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --maincolor:#e1a577;
+    --p_textcolor:#737269;
+
+
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    padding-left: 226px;
+}
+
+html{
+    font-size:90%;
+    overflow-x:hidden; 
+}
+
+html ::-webkit-scrollbar{
+    width: 15px;
+ }
+ 
+html ::-webkit-scrollbar-track{
+    background:rgb(241, 236, 236);
+}
+
+html ::-webkit-scrollbar-thumb{
+    background:rgb(250, 168, 168);
+}
+
+
+header{
+    position: fixed;
+    top:0px; 
+    left:0px; 
+    bottom:0px;
+    background:#222;
+
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: space-around;
+    padding: 80px 32px;
+    width: 225px;
+    text-align: center;    
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+header .logo img{
+    width: 100px;
+    border-radius: 10px;
+ } 
+
+header .follow img {
+    width: 30px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+ header .follow img:hover{
+    background-color:white;
+    border-radius: 50px;
+ }
+
+ 
+ header .nav {
+    display: flex;
+    align-items: center;
+ }
+
+ header ul li {
+    padding: 3px;   
+ }
+
+ header .nav a {
+    color:#e1a577;
+    font-family: 'Qwigley', cursive;
+    font-size: 32px; 
+ }
+
+ header .nav a:hover{
+    color:aquamarine;
+ }
+
+.main {
+    background:  linear-gradient(rgba(162, 169, 218, 0.7), rgba(177, 178, 182, 0.7)), url('../images/hero-bg/landing.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 90px;
+}
+
+ main .div-line {
+    width: 50px;
+    background-color:rgb(189, 35, 35);
+    height: 3px;
+    margin: 20px auto;
+}
+
+main ul.caption-slides {
+    padding-left: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 2px solid black;
+    letter-spacing: 2px;
+  
+    color: black;
+    opacity: .7;
+    text-align: center;
+}
+
+main ul.caption-slides:hover{
+    color:rgb(7, 107, 143);
+}
+
+main .caption-slides{
+    box-shadow: inset 100px 0 0 0 #057980;
+    font-family: 'Cormorant SC', serif;
+}
+
+main .caption-slides:hover{
+    box-shadow: inset 100px 0 0 0 #3a3835;
+    font-family: 'Cormorant SC', serif;
+}
+
+main .readmore {
+    margin: 0 auto;
+    width: 90px;
+    line-height: 100px;
+}
+
+main .btn{
+    color: rgb(244, 238, 238);
+    background-color: rgb(146, 98, 176);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+main .btn:hover{
+color: rgb(252, 251, 251);
+background-color: rgb(17, 3, 3);
+border-radius: 5px;
+}
+
+section .about div{
+    text-align: center;
+}
+
+section .text-about{
+    text-align: center;
+    margin-top: 90px;
+}
+
+section .text-about h2 {
+font-family: 'Bilbo Swash Caps', cursive;
+font-size: 30px;
+}
+
+section .text-about .div-line{
+    width: 50px;
+    height: 3px;
+    margin: 20px auto;
+    background-color:rgb(189, 35, 35);
+}
+
+section .text-about p{
+     width: 350px;
+     margin: 0px auto;
+     padding: 10px;
+     color:var(--p_textcolor);
+     line-height: 24px;
+     letter-spacing: 1.2px;
+     font-size: 13px;  
+     border: 2px solid rgb(203, 172, 168);
+     border-radius: 10px;
+}
+
+section .offer-boxes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    padding-top: 90px;
+}
+
+section .offer-boxes img{
+    width: 50px;
+}
+
+section .offer-boxes h4 {
+    text-align: center;
+    letter-spacing: 1px;
+    color: #1f2021;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+}
+
+section .offer-boxes p{
+  margin: 0px auto;
+  text-align: center;
+  color: var(--p_textcolor);
+  line-height: 24px;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+}
+
+section .service-title{
+    padding: 20px;
+    margin-top: 90px ;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color:rgba(203, 203, 228, 0.811);
+}
+
+section .service-title h2{
+    font-family: 'Pacifico', cursive;  
+    color:rgb(24, 24, 24); 
+    font-weight: 100;
+    margin: 0px;
+}
+
+section .service-title p{
+    line-height: 1.5rem;
+    font-size: 16px;
+    margin: 0px;
+    color:var(--p_textcolor);
+}
+
+section .service-list h5{
+    text-transform: uppercase;
+}
+
+section .service-list p{
+    width: 230px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 14px;
+    color: cadetblue;
+}
+
+section .service-list .p-last{
+   margin-bottom: 150px;
+
+}
+
+section .service-list img{
+    width:35px;
+}
+
+section .col {
+    display: block;
+    float:left;
+    margin: 1% 0 1% 1%;;
+}
+
+/*TEAM SECTION*/
+section .features-image img {
+    width: 430px;
+}
+
+section .team{
+    margin: 0 auto;
+    width: 980px;
+}
+
+section .text-team {
+    padding-top: 90px;
+    text-align: center;
+}
+
+section .text-team h2{
+    font-family: 'Cormorant SC', serif;
+}
+
+section .text-team h2 span{
+    color:var(--maincolor);
+}
+
+section .text-team p{
+    color: var(--p_textcolor);
+    line-height: 24px;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+}
+
+section .img img{
+    width: 300px;
+}
+
+section .our_team{
+    margin: 0 auto;
+    width: 960px;
+    text-align: center;
+    padding-top: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+
+section .img {
+    position: relative; 
+    max-width: 300px; 
+}
+ 
+section .img img { 
+    width: 100%; 
+}
+ 
+section .fullcap {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0; 
+    left: 0;
+    text-align: center;
+    padding-top: 30%;
+    background-color: rgba(255, 255, 255, 0.831);
+    color:rgb(5, 52, 38);
+}
+ 
+section .fullcap {
+    visibility: none; 
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+section .fullcap h2{
+    font-family: 'Cormorant SC', serif;
+}
+
+section .fullcap p{
+    color: #737269;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+}
+
+section .img:hover .fullcap {
+    visibility: visible; 
+    opacity: 1;
+}
+
+section .team-skills {
+    padding-top: 50px;    
+    margin-left: 40px;
+
+    display:flex;
+    justify-content: space-between;
+}
+
+/*TEAM SKILLS*/
+section .team-skills h3{
+    font-family: 'Cormorant SC', serif;
+}
+
+section .team-skills p{
+    width: 430px;
+    padding-right: 80px;
+    color:var(--p_textcolor);
+    line-height: 24px;
+    font-size: 14px;
+    letter-spacing: 1.2px; 
+}
+
+section .skills{
+    margin-right: 40px;
+    line-height: 30px;
+    padding: 30px;
+}
+
+section .skills label{
+    font-weight: bold;
+}
+
+section .skills progress {
+    width: 330px;
+}
+
+ /*CLIENTS SECTION*/
+section .banner-clients{
+    margin-top: 80px;
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.797);
+}
+
+section .banner-clients img{
+    width: 100px;
+    padding: 50px;
+}
+
+/*WORKS SECTION*/
+section .product-section-1 , .product-section-2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+section .product-title-1{
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 90px;
+}
+
+section .product-title-1 h2{
+    font-family: 'Cormorant SC', serif;
+    font-weight: 800;
+}
+
+section .description{
+    text-align: justify;
+    width: 500px;
+}
+
+section .description-1{
+    text-align: center;
+    width: 500px;
+    padding: 80px;
+}
+
+section .description-1 a{
+    padding: 12px;
+    background-color: rgb(132, 130, 130);
+    font-size: 12px;
+    color: rgb(255, 253, 253);
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+section .description-1 a:hover{
+    background-color: #ad91a0;
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+}
+
+section .description h4{
+    color:var(--maincolor);
+}
+
+section .description, .description-1 p{
+    margin-bottom: 30px;
+    color:var(--p_textcolor);
+    line-height: 24px;
+    font-size: 14px;
+    letter-spacing: 1.2px; 
+}
+
+section .product-img img{
+    margin-left: 80px;
+    width: 250px;
+}
+
+/*SUBSCRIBE SECTION*/
+section .subscribe{
+    padding: 40px;
+    margin: 100px;
+    background-color: #bec1f0;
+    text-align: center;
+    line-height: 2rem;
+    border-top: 1px solid rgb(206, 44, 44);
+    border-bottom: 1px solid rgb(206, 44, 44);   
+}
+
+section .subscribe input{
+    width: 320px;
+    padding: 10px;
+}
+
+section .subscribe button{
+    padding: 10px;
+    margin-left: 5px;
+    width: 120px;
+    background-color: rgb(72, 69, 69);
+    color: white;
+    text-transform: uppercase;
+}
+
+section .subscribe button:hover{
+    border-radius: 10px;
+    background-color: green;
+}
+
+ /*CONTACT SECTION*/
+
+section .contact{
+    text-align: center;
+ }
+
+ section .contact h2{
+    padding-top: 90px;
+ }
+section .contact p{
+    color: var(--p_textcolor);
+}
+ section .form{
+    text-align: center;
+    padding: 30px;  
+}
+
+section .form input{
+    border-bottom: 1px solid black;
+    width: 500px;
+    padding: 10px;
+}
+
+section .form textarea{
+    border-bottom: 1px solid black;
+    width: 500px;
+    padding: 10px;
+}
+
+section .form button{
+    width: 500px;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #222;
+    text-transform: uppercase;
+    color: white;
+}
+
+/*FOOTER*/
+
+footer{
+    margin-top:80px;
+}
+footer .footer {
+    display: flex;
+    justify-content: space-around;
+
+    background-color:beige;
+    padding: 60px;
+
+}
+
+footer .footer a{
+    color: black;
+    font-weight: 700;
+}
+
+section .section {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+footer .container  {
+    border-radius: 5px;
+    padding: 30px;
+    background-color: #ad91a0;
+}
+
+footer .container h2{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}
+
+footer .cards{
+    margin: 0 auto;
+    width: 500px;
+}
+
+footer .info .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+footer .info .card img {
+    border-radius: 10px;
+    width: 50px;
+}
+
+footer .info .card p{
+    font-family: 'Cormorant SC', serif;
+    font-weight: bold;
+}
+
+footer .card img:hover{
+    width: 60px;
+}
+
+footer .info .cards .card {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    border: 1px solid rgb(10, 10, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ footer .info .cards .card i::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    border-width: 10px;
+    border-color: transparent transparent #39ef4e transparent;
+    border-style: solid;
+    transform: rotate(-45deg);
+}
+
+
+@media (min-width: 200px) and (max-width: 700px){
+
+body{
+    padding-left: 0px;
+    background-color: aliceblue;
+    }
+
+header {
+    display: none !important;
+    }
+
+main .caption-slides {
+    box-shadow: inset 100px 0 0 0 #a1c5d4;
+    color: rgb(0, 0, 0);
+    font-family: 'Cormorant SC', serif;
+    margin-top: 190px;
+    }
+    
+.main{
+    width: 103vh;
+     }
+     
+.follow{
+    margin-bottom: 20px;
+     }
+
+.about{
+    width: 120vh;
+     }
+
+section .text-about h2 {
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 40px;
+    }
+
+section .text-about p {
+    width: 380px;
+    margin: 0px auto;
+    padding: 20px;
+    font-size: 16px;
+    border: 2px solid rgb(203, 172, 168);
+    border-radius: 10px;
+    }
+
+section .offer-boxes{
+    display: grid;
+    grid-template-columns: 1fr;
+     }
+
+section .offer-boxes p{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    width: 400px;
+    }     
+     
+section .offer-boxes img {
+    width: 40px;
+    margin-top: 5px;
+    }
+
+section .col{
+    float: none;
+    margin: 0 auto;
+    width: 400px;
+}
+
+section .section{
+    margin: 0 auto;
+    width: 120vh;
+    }
+        
+section .service-title { 
+    width: 117vh;
+    }
+
+section .service-list p{
+    width: 400px;
+    }
+
+section .service-list .p-last {
+    width: 400px;
+   }
+   
+section .our_team {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+section .our_team img{
+    width: 400px;
+    padding: 30px;
+    } 
+
+section .team-skills { 
+    margin: 0 auto;      
+    width: 200px;
+    text-align: justify;
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+section .text-team {
+    width: 400px;
+    margin: 0 250px 0 400px;
+    font-size: 30px;
+    }
+
+section .text-team p {
+    font-size: 18px;
+    }
+
+section .banner-clients {
+    background-color: rgba(40, 86, 123, 0.797);
+    width: 116vh;
+    }
+
+section .product-section-1, .product-section-2 {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    align-items: center;
+    align-content: center;
+    width: 110vh;
+}
+
+section .description, .description-1 p {     
+    width: 300px;
+    margin: 0 auto;
+    }
+
+section .description-1 a {
+    line-height: 90px;}
+
+section .product-title-1 {
+    width: 116vh;
+    margin: 0 auto;
+    }
+
+section .subscribe {
+    background-color: transparent;
+    margin: 100px 0px 0px 0px;
+    border-top: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(12, 12, 12);
+    width: 113vh;
+}
+
+section .contact {
+    width: 60vh;
+    margin-left: 300px;
+        }
+
+section .form {
+    width: 110vh;
+    margin: 0 auto;
+            }
+
+footer .container {
+    width: 116vh;
+}    
+            
+        }
+
+@media (min-width: 701px) and (max-width: 1030px) {
+body{
+    padding: 0px;
+    width: 100%;
+
+}
+header{
+    width: 100%;
+    height: 77px;
+    padding: 0 30px;
+    background-color: rgb(211, 176, 176);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    }
+
+header .nav ul{
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+     }
+
+header .nav a{
+    padding: 2rem;
+    color: rgb(254, 249, 249);
+    font-weight: 800;
+     }
+
+header .logo img {
+    display: none;
+}
+
+header .follow{
+    display: none;
+        }
+
+main .caption-slides {
+    box-shadow: inset 100% 0 0 0 #a1c5d4;
+    color: rgb(0, 0, 0);
+    font-family: 'Cormorant SC', serif;
+    margin-top: 190px;
+    }
+
+.about{
+    width: 120vh;
+    }
+
+section .text-about p{
+    width: 350px;
+    margin: 0px auto;
+    padding: 10px;
+    color: #737269;
+    line-height: 24px;
+    letter-spacing: 1.2px;
+    font-size: 13px;  
+    border: 2px solid rgb(203, 172, 168);
+    border-radius: 10px;
+}
+
+section .offer-boxes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    padding-top: 90px;
+}
+
+section .offer-boxes img{
+    width: 50px;
+}
+
+section .offer-boxes h4 {
+    text-align: center;
+    letter-spacing: 1px;
+    color: #1f2021;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+}
+
+section .offer-boxes p{
+    margin: 0px auto;
+    text-align: center;
+    color: #737269;
+    line-height: 24px;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+}
+
+section .service-title{
+    background-color:transparent;   
+}
+
+section .banner-clients{
+    background-color:transparent;
+}
+
+section .banner-clients img{
+    width: 100px;
+    padding: 50px;
+    background-color: #393b39;
+}
+
+section .contact{
+    text-align: center;
+ }
+
+ section .contact h2{
+    padding-top: 90px;
+ }
+
+ section .form{
+    text-align: center;
+    padding: 30px;  
+}
+
+section .form input{
+    border-bottom: 1px solid black;
+    width: 500px;
+    padding: 10px;
+}
+
+section .form textarea{
+    border-bottom: 1px solid black;
+    width: 500px;
+    padding: 10px;
+}
+
+section .form button{
+    width: 500px;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #222;
+    text-transform: uppercase;
+    color: white;
+}
+        }
+
+@media (min-width: 1031px) {
+
+
+header{
+    position: fixed;
+    top:0px; 
+    left:0px; 
+    bottom:0px;
+    background:#222;
+
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: space-around;
+    padding: 80px 32px;
+    width: 225px;
+    text-align: center;    
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+header .logo img{
+    width: 100px;
+    border-radius: 10px;
+ } 
+
+header .follow img {
+    width: 30px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+ 
+ header .nav a:hover{
+    color:aquamarine;
+ }
+
+.main {
+    background-image: cover;
+    padding: 90px;
+}
+
+
+}
