@@ -783,14 +783,18 @@ footer .container {
 @media (min-width: 701px) and (max-width: 1030px) {
 body{
     padding: 0px;
-    width: 100%;
-
 }
+
+section .section, .our_team , .service-section , .colgrid_1_of_3 , .team ,.clients, .product, .subscription, .contact-form, .container{
+    width:1400px;
+    margin: 0 auto;
+}
+
 header{
     width: 100%;
     height: 77px;
     padding: 0 30px;
-    background-color: rgb(211, 176, 176);
+    background-color: rgb(165, 142, 142);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -828,10 +832,54 @@ main .caption-slides {
     margin-top: 190px;
     }
 
+.main{
+width: 110vh;
+}
+
+section .offer-boxes{
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+  
+section .offer-boxes p{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    width: 400px;
+        }     
+         
+section .section{
+    margin: 0 auto;
+    width: 120vh;
+        }
+                
+section .service-title { 
+    width: 117vh;
+        }
+        
+section .service-list p{
+    width: 400px;
+        }
+        
+section .service-list .p-last {
+     width: 400px;
+     padding-bottom: 50px;
+           }
+           
 .about{
     width: 120vh;
+    margin: 0 auto;
     }
 
+.team-section{
+    margin: 0 auto;
+    width: 1500px;
+}   
+section .text-about h2{
+    width: 350px;
+    font-size: 45px;
+    margin: 0 auto;
+}
 section .text-about p{
     width: 350px;
     margin: 0px auto;
@@ -844,35 +892,6 @@ section .text-about p{
     border-radius: 10px;
 }
 
-section .offer-boxes{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
-    padding-top: 90px;
-}
-
-section .offer-boxes img{
-    width: 50px;
-}
-
-section .offer-boxes h4 {
-    text-align: center;
-    letter-spacing: 1px;
-    color: #1f2021;
-    font-family:Georgia, 'Times New Roman', Times, serif; 
-}
-
-section .offer-boxes p{
-    margin: 0px auto;
-    text-align: center;
-    color: #737269;
-    line-height: 24px;
-    font-size: 12px;
-    letter-spacing: 1.2px;
-}
 
 section .service-title{
     background-color:transparent;   
@@ -888,43 +907,9 @@ section .banner-clients img{
     background-color: #393b39;
 }
 
-section .contact{
-    text-align: center;
- }
-
- section .contact h2{
-    padding-top: 90px;
- }
-
- section .form{
-    text-align: center;
-    padding: 30px;  
-}
-
-section .form input{
-    border-bottom: 1px solid black;
-    width: 500px;
-    padding: 10px;
-}
-
-section .form textarea{
-    border-bottom: 1px solid black;
-    width: 500px;
-    padding: 10px;
-}
-
-section .form button{
-    width: 500px;
-    padding: 10px;
-    margin-top: 30px;
-    background-color: #222;
-    text-transform: uppercase;
-    color: white;
-}
         }
 
 @media (min-width: 1031px) {
-
 
 header{
     position: fixed;
